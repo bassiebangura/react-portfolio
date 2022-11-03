@@ -1,6 +1,10 @@
 import './App.css';
 import React, {useState} from 'react';
 import Header from './components/header';
+import About from './components/about';
+import Contact from './components/contact';
+import Footer from './components/footer';
+
 
 function App() {
   //about me is the default page
@@ -12,8 +16,15 @@ function App() {
   ];
   const [currentTitle, setCurrentTitle] = useState(navItems[0].title);
   return (
-    <div>
-       <Header navItems={navItems} currentTitle={currentTitle} setCurrentTitle={setCurrentTitle}/>
+    <div className='flex flex-col h-full bg-gray-200'>
+      <Header navItems={navItems} currentTitle={currentTitle} setCurrentTitle={setCurrentTitle} />
+      <main>
+        {currentTitle === 'About Me' && <About />}
+        {currentTitle === 'Contact' && <Contact />}
+        {/* {currentTitle === 'Resume' && <Resume />} */}
+        {/* {currentTitle === 'Portfolio' && <Portfolio />} */}
+      </main>
+      <Footer />
     </div>
   );
 }
