@@ -4,6 +4,7 @@ import Header from './components/header';
 import About from './components/about';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import Portfolio from './components/portfolio';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
         {currentTitle === 'About Me' && <About />}
         {currentTitle === 'Contact' && <Contact />}
         {/* {currentTitle === 'Resume' && <Resume />} */}
-        {/* {currentTitle === 'Portfolio' && <Portfolio />} */}
+        {currentTitle === 'Portfolio' && <Portfolio />}
       </main>
       <Footer />
     </div>
