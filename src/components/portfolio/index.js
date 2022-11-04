@@ -54,7 +54,7 @@ export default function Portfolio() {
         <h1 className="text-center w-1/2 text-xl  text-cyan-900 font-extrabold mt-8 border-b-2 border-cyan-700">
           Portfolio
         </h1>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3 items-center mt-8 mx-6 px-6">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 2xl:grid-cols-3 items-center mt-8 mx-6 px-6">
           {projects.map((project) => (
             <Project
               project_image={require(`../../assets/images/projct${project.id}.png`)}

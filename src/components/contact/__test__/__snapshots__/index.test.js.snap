@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="p-4"
+  >
+    <div
+      class="flex flex-col bg-white rounded-lg p-8 items-center mx-auto md:max-w-4xl md:-mt-32"
+    >
+      <h1
+        class="text-cyan-900 font-extrabold text-center mb-4"
+        data-testid="h1tag"
+      >
+        Contact Me
+      </h1>
+      <form
+        class="bg-gradient-to-b from-sky-800 to-cyan-600  p-6 rounded-md w-full drop-shadow-md max-w-md"
+        id="contact-form"
+      >
+        <div
+          class="mt-4 grid grid-cols-1 gap-y-4 font-medium text-gray-700"
+        >
+          <div>
+            <label
+              class="block text-sm font-medium text-white"
+              for="name"
+            >
+              Name:
+            </label>
+            <div
+              class="mt-1"
+            >
+              <input
+                class="block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                name="name"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              class="block text-sm font-medium text-white"
+              for="email"
+            >
+              Email address:
+            </label>
+            <div
+              class="mt-1"
+            >
+              <input
+                class="block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                name="email"
+                type="email"
+                value=""
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              class="text-white"
+              for="message"
+            >
+              Message:
+            </label>
+            <div>
+              <textarea
+                class="block w-full rounded-md border-gray-300 shadow-sm focus:border-cyan-500 focus:ring-cyan-500"
+                name="message"
+                rows="5"
+              />
+            </div>
+          </div>
+          <button
+            class="rounded-md w-full border border-transparent bg-sky-800 py-2 mt-4 text-md font-medium text-white shadow-sm hover:bg-white hover:text-sky-800 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2"
+            data-testid="submit"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</DocumentFragment>
+`;
