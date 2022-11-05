@@ -4,7 +4,7 @@ import avatarImage from '../../assets/images/avatar.jpeg';
 function About() {
     return (
       <section aria-labelledby="about-me-section">
-        <div className="flex flex-col overflow-hidden p-6 rounded-lg mx-4 max-w-4xl  bg-white shadow mt-6 md:mx-auto  md:-mt-32 ">
+        <div className="flex flex-col overflow-hidden p-6 rounded-lg mx-4 max-w-3xl  bg-white shadow mt-6 md:mx-auto  md:-mt-32 ">
           <div className="justify-center">
             <img
               src={avatarImage}

@@ -18,15 +18,17 @@ function App() {
   ];
   const [currentTitle, setCurrentTitle] = useState(navItems[0].title);
   return (
-    <div className='flex flex-col h-full bg-gray-200'>
+    <div className='flex flex-col min-h-full bg-gray-200'>
       <Header navItems={navItems} currentTitle={currentTitle} setCurrentTitle={setCurrentTitle} />
-      <main>
+      <main className='py-8 px-2'>
         {currentTitle === 'About Me' && <About />}
         {currentTitle === 'Contact' && <Contact />}
         {currentTitle === 'Resume' && <Resume />}
         {currentTitle === 'Portfolio' && <Portfolio />}
       </main>
-      <Footer />
+      <div className='mt-auto'>
+        <Footer />
+      </div>
     </div>
   );
 }

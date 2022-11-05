@@ -49,9 +49,9 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div className="">
-      <div className="flex flex-col bg-white rounded-lg p-8 items-center mx-auto md:max-w-4xl md:-mt-32">
-        <h1 className="text-center text-2xl  text-sky-900 font-extrabold mt-2">
+    <div>
+      <div className="flex flex-col sm:bg-white rounded-lg p-4 items-center mx-auto md:max-w-4xl md:-mt-32">
+        <h1 className="text-center text-2xl  text-sky-900 font-extrabold">
           Portfolio
         </h1>
         <div className="grid grid-cols-1  sm:grid-cols-2 2xl:grid-cols-3 gap-4 sm:gap-8 items-center mt-8 sm:mx-6 sm:px-6">
