@@ -1,4 +1,3 @@
-import './App.css';
 import React, {useState} from 'react';
 import Header from './components/header';
 import About from './components/about';
@@ -9,7 +8,6 @@ import Resume from './components/resume';
 
 
 function App() {
-  //about me is the default page
   const navItems = [
     { id: 1, title: 'About Me' },
     { id: 2, title: 'Portfolio' },
@@ -18,7 +16,7 @@ function App() {
   ];
   const [currentTitle, setCurrentTitle] = useState(navItems[0].title);
   return (
-    <div className='flex flex-col min-h-full bg-gray-200'>
+    <div className='flex flex-col min-h-screen bg-gray-200'>
       <Header navItems={navItems} currentTitle={currentTitle} setCurrentTitle={setCurrentTitle} />
       <main className='py-8 px-2'>
         {currentTitle === 'About Me' && <About />}
