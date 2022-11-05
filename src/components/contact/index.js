@@ -57,7 +57,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-sky-900"
+                  className="block text-sm font-bold text-sky-900"
                 >
                   Name:
                 </label>
@@ -67,14 +67,14 @@ export default function Contact() {
                     name="name"
                     defaultValue={formState.name}
                     onBlur={handleChange}
-                    className="block w-full rounded-md border-2 border-gray-200 shadow-sm focus:border-sky-900 focus:ring-sky-900"
+                    className="block w-full rounded-md border-2 border-gray-200 shadow-sm focus:border-gray-800 focus:ring-gray-800"
                   />
                 </div>
               </div>
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-sky-900"
+                  className="block text-sm font-bold text-sky-900"
                 >
                   Email address:
                 </label>
@@ -84,14 +84,14 @@ export default function Contact() {
                     name="email"
                     defaultValue={formState.email}
                     onBlur={handleChange}
-                    className="block w-full rounded-md border-2 border-gray-200 shadow-sm focus:border-sky-900 focus:ring-sky-900"
+                    className="block w-full rounded-md border-2 border-gray-200 shadow-sm focus:border-gray-800 focus:ring-gray-800"
                   />
                 </div>
               </div>
               <div>
                 <label
                   htmlFor="phone"
-                  className="block text-sm font-medium text-sky-900"
+                  className="block text-sm font-bold text-sky-900"
                 >
                   Phone Number:
                 </label>
@@ -101,12 +101,12 @@ export default function Contact() {
                     name="phone"
                     defaultValue={formState.phone}
                     onBlur={handleChange}
-                    className="block w-full rounded-md border-2 border-gray-200 shadow-sm focus:border-sky-900 focus:ring-sky-900"
+                    className="block w-full rounded-md border-2 border-gray-200 shadow-sm focus:border-gray-800 focus:ring-gray-800"
                   />
                 </div>
               </div>
               <div>
-                <label htmlFor="message" className="text-sky-900">
+                <label htmlFor="message" className="text-sky-900 font-bold">
                   Message:
                 </label>
                 <div>
@@ -115,7 +115,7 @@ export default function Contact() {
                     rows="5"
                     defaultValue={formState.message}
                     onBlur={handleChange}
-                    className="block w-full rounded-md border-2 border-gray-200 shadow-sm focus:border-sky-900 focus:ring-sky-900"
+                    className="block w-full rounded-md border-2 border-gray-200 shadow-sm focus:border-gray-800 focus:ring-gray-800"
                   />
                 </div>
               </div>
