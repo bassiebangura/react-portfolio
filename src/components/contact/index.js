@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {validateEmail, capitalizeFirstLetter} from '../../utils/helpers';
+import {validateEmail, validatePhoneNum, capitalizeFirstLetter} from '../../utils/helpers';
 
 export default function Contact() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [formState, setFormState] = useState({ name: '', phone: '', email: '', message: '' });
     const [errorMessage, setErrorMessage] = useState('');
     
     function handleChange(e) {
@@ -13,7 +13,14 @@ export default function Contact() {
             } else {
                 setErrorMessage('');
             }
-        } else {
+          } else if (e.target.name === 'phone') {
+            const isValid = validatePhoneNum(e.target.value);
+            if (!isValid) {
+                setErrorMessage('Your phone number is invalid.');
+            } else {
+                setErrorMessage('');
+            }
+          } else {
             if (!e.target.value.length) {
                 setErrorMessage(`${e.target.name} is required.`);
             } else {
@@ -77,7 +84,24 @@ export default function Contact() {
                     name="email"
                     defaultValue={formState.email}
                     onBlur={handleChange}
-                    className="block w-full rounded-md border-2 border-gray-00 shadow-sm focus:border-sky-900 focus:ring-sky-900"
+                    className="block w-full rounded-md border-2 border-gray-200 shadow-sm focus:border-sky-900 focus:ring-sky-900"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-sky-900"
+                >
+                  Phone Number:
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="tel"
+                    name="phone"
+                    defaultValue={formState.phone}
+                    onBlur={handleChange}
+                    className="block w-full rounded-md border-2 border-gray-200 shadow-sm focus:border-sky-900 focus:ring-sky-900"
                   />
                 </div>
               </div>
