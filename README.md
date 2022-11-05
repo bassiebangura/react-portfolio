@@ -1,4 +1,4 @@
-# A Portfolio Website Built with Github Pages and React
+# A Portfolio Website Built With React
 
 ## Pages and Components
 
