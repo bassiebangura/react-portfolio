@@ -44,7 +44,7 @@ export default function Resume() {
   return (
     <section aria-labelledby="about-me-section">
       <div className="flex flex-col overflow-hidden p-6 rounded-lg mx-4 max-w-4xl  bg-white shadow mt-6 md:mx-auto  md:-mt-32 ">
-        <div>
+        <div className='mb-4'>
           <h1 className="text-2xl text-center font-extrabold text-sky-900 mb-2">
             Resume
           </h1>
