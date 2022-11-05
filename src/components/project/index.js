@@ -3,11 +3,11 @@ import React from "react";
 export default function Project(props) {
     const { title, github_link, deployed_link, project_image } = props;
     return (
-      <div class="relative m-2 w-full">
-        <div class="absolute inset-0 z-10 rounded-md bg-white  rounder-md text-center flex flex-col items-center justify-center opacity-0 hover:opacity-100 bg-opacity-96 duration-300">
+      <div className="relative m-2 w-full">
+        <div className="absolute inset-0 z-10 border-2 border-gray-200 bg-white  rounded-md text-center flex flex-col items-center justify-center opacity-0 hover:opacity-95 bg-opacity-96 duration-300">
           <div>
-            <h3 class="font-bold pt-4 pb-8">{title}</h3>
-            <div class="flex justify-center">
+            <h3 className="font-bold pt-4 pb-8">{title}</h3>
+            <div className="flex justify-center">
               <a
                 href={github_link}
                 target="_blank"
@@ -27,8 +27,8 @@ export default function Project(props) {
             </div>
           </div>
         </div>
-        <div class="relative shadow-md">
-          <img src={project_image} className="h-48 w-full rounded-md shadow-md" />
+        <div className="relative border-2 border-gray-200 rounded-md">
+          <img src={project_image} className="h-48 w-full rounded-md" />
         </div>
       </div>
     );

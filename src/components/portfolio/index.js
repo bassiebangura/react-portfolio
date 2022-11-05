@@ -3,19 +3,17 @@ import Project from '../project';
 
 const projects = [
   {
-    id: 1,
-    title: "Registration Form",
-    github_link:
-      "https://github.com/bassiebangura/Project_3_An_Online_Registration_Form",
-    deployed_link:
-      "https://bassiebangura.github.io/Project_3_An_Online_Registration_Form/",
+    id: 4,
+    title: "Game Show App",
+    github_link: "https://github.com/bassiebangura/Project_6_Game_Show_App",
+    deployed_link: "https://bassiebangura.github.io/Project_6_Game_Show_App/",
   },
   {
     id: 2,
     title: "A Web Style Guide",
     github_link: "https://github.com/bassiebangura/Project_4_A_Web_Style_Guide",
     deployed_link:
-      "https://bassiebangura.github.io/Project_4_A_Web_Style_Guide/",
+    "https://bassiebangura.github.io/Project_4_A_Web_Style_Guide/",
   },
   {
     id: 3,
@@ -24,10 +22,12 @@ const projects = [
     deployed_link: "https://bassiebangura.github.io/Project_5_Photo_Gallery/",
   },
   {
-    id: 4,
-    title: "Game Show App",
-    github_link: "https://github.com/bassiebangura/Project_6_Game_Show_App",
-    deployed_link: "https://bassiebangura.github.io/Project_6_Game_Show_App/",
+    id: 1,
+    title: "Registration Form",
+    github_link:
+      "https://github.com/bassiebangura/Project_3_An_Online_Registration_Form",
+    deployed_link:
+      "https://bassiebangura.github.io/Project_3_An_Online_Registration_Form/",
   },
   {
     id: 5,
@@ -49,12 +49,12 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div className='p-6'>
-      <div className="flex flex-col bg-gray-100 rounded-lg p-8 items-center mx-auto md:max-w-4xl md:-mt-32">
-        <h1 className="text-center w-1/2 text-xl  text-cyan-900 font-extrabold mt-8 border-b-2 border-cyan-700">
+    <div className="">
+      <div className="flex flex-col bg-white rounded-lg p-8 items-center mx-auto md:max-w-4xl md:-mt-32">
+        <h1 className="text-center text-2xl  text-sky-900 font-extrabold mt-2">
           Portfolio
         </h1>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 2xl:grid-cols-3 items-center mt-8 mx-6 px-6">
+        <div className="grid grid-cols-1  sm:grid-cols-2 2xl:grid-cols-3 gap-4 sm:gap-8 items-center mt-8 sm:mx-6 sm:px-6">
           {projects.map((project) => (
             <Project
               project_image={require(`../../assets/images/projct${project.id}.png`)}
