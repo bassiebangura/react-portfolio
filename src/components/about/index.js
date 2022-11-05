@@ -12,18 +12,18 @@ function About() {
               alt="avatar-image"
             />
           </div>
-          <h1 className="text-sky-900 text-2xl p-6 text-center font-bold">
+          <h1 className="text-gray-900 text-2xl p-6 text-center font-bold">
             Who am I?
           </h1>
           <div>
-            <p className="p-6 pb-8 text-sky-900 font-medium">
+            <p className="p-6 pb-8 text-gray-800 text-lg font-medium text-justify">
               Hi, there! I am <b>Bassie Bangura</b>, orginally from Sierra Leone,
               Western Africa. I live in Spring Hill, Tennessee with my wife and son. 
               
               <br></br>
               <br></br>
-              Earned a degree in Electronics Engineering during which I gained interest in
-              computer networking. A year into computer networking, I became curious about
+               I earned a degree in Electronics Engineering in 2013. I gained interest in
+              computer networking in college. A year into computer networking, I became curious about
               web development. In 2016 I started learning Web Development online through Udacity, TeamTreeHouse and others. 
               In 2017 I became a Freelance Web Developer.
               <br></br>
